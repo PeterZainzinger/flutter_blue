@@ -40,7 +40,7 @@ android {
 
 protobuf {
     protoc {
-        artifact = 'com.google.protobuf:protoc:3.11.4'
+      path = System.getenv('PROTOC')
     }
     generateProtoTasks {
         all().each { task ->
